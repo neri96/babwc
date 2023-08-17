@@ -1,0 +1,36 @@
+.services__leftArrow {
+  animation: leftArrowSlide;
+  animation-duration: 1500ms;
+  animation-iteration-count: infinite;
+  transform: rotate(180deg) translateX(15px);
+}
+.services__rightArrow {
+  animation: rightArrowSlide;
+  animation-duration: 1500ms;
+  animation-iteration-count: infinite;
+  transform: translateX(15px);
+}
+
+@keyframes rightArrowSlide {
+  0% {
+    transform: translateX(15px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(15px);
+  }
+}
+
+@keyframes leftArrowSlide {
+  0% {
+    transform: rotate(180deg) translateX(15px);
+  }
+  50% {
+    transform: rotate(180deg) translateX(0);
+  }
+  100% {
+    transform: rotate(180deg) translateX(15px);
+  }
+}

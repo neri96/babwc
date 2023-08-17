@@ -1,0 +1,39 @@
+.intro {
+  height: 100vh;
+  position: relative;
+}
+
+.intro__text {
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 150;
+  color: #fff;
+  text-align: center;
+}
+
+.intro__title {
+  font-size: 50px;
+  margin: 20px 0;
+}
+
+.intro__descr {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.intro__number {
+  a {
+    color: #b3b3ff;
+    text-decoration: none;
+  }
+}
+
+.intro__btn {
+  margin: 20px 0;
+}
+
+.intro__btnTitle {
+  font-size: 17px;
+}

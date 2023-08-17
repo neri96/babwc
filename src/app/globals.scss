@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+div,
+a,
+li,
+h1,
+h2,
+h3,
+h4,
+input,
+textarea,
+button,
+label {
+  font-weight: 500;
+}
