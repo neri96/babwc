@@ -1,0 +1,16 @@
+.contact {
+  min-height: calc(100vh - 180px);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px 0;
+  box-sizing: border-box;
+}
+
+.contactBody {
+  height: calc(100% - 70px);
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+}
