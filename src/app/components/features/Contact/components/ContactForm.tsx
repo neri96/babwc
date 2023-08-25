@@ -11,6 +11,8 @@ import Select from "@/app/components/ui/Select";
 import Button from "@/app/components/ui/Button";
 import ContactSuccess from "./ContactSuccess";
 
+import useValidation from "@/app/hooks/useValidation";
+
 import styles from "./ContactForm.module.scss";
 
 interface IState {
@@ -39,6 +41,8 @@ const ContactForm = () => {
 
   const [successModal, setSuccessModal] = useState<boolean>(false);
 
+  const { validate } = useValidation(["name", "email", "phone", "details"]);
+
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -66,6 +70,12 @@ const ContactForm = () => {
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+
+    const validationErrors = validate(value as { [key: string]: string });
+
+    if (validationErrors) {
+      return setError((err) => ({ ...err, ...validationErrors }));
+    }
 
     emailjs
       .sendForm(
