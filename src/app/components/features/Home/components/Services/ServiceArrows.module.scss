@@ -34,3 +34,12 @@
     transform: rotate(180deg) translateX(15px);
   }
 }
+
+// MEDIA //
+
+@media screen and (max-width: 620px) {
+  .services__sideArrow {
+    height: 40px;
+    width: 40px;
+  }
+}

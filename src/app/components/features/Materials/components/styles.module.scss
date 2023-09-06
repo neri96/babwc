@@ -97,3 +97,17 @@
     line-height: 22px;
   }
 }
+
+// MEDIA //
+
+@media screen and (max-width: 1300px) {
+  .materials__options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .materials__options {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

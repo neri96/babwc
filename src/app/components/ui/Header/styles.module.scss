@@ -103,3 +103,25 @@
     }
   }
 }
+
+// MEDIA //
+
+@media screen and (max-width: 800px) {
+  .mainHeader__navIcon {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav__mobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mainLogo {
+    margin: 0;
+  }
+}

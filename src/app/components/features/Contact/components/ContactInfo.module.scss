@@ -81,3 +81,28 @@
     width: 60px;
   }
 }
+
+// MEDIA //
+
+@media screen and (max-width: 1500px) {
+  .contactInfo__contact {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .contactInfo__wrap {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contactInfo__wrap {
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .contactInfo__footer {
+    display: none;
+  }
+}

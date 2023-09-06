@@ -12,6 +12,8 @@ import classnames from "classnames";
 
 import useCurrentPath from "@/app/hooks/useCurrentPath";
 
+import HamburgerMenu from "../HamburgerMenu";
+
 import logo from "../../../assets/images/main-logo2.png";
 
 import styles from "./styles.module.scss";
@@ -46,6 +48,12 @@ const Header = () => {
         className={styles.mainLogo}
       >
         <Image priority={true} src={logo} alt="Main" />
+      </div>
+      <div className={styles.mainHeader__navIcon}>
+        <HamburgerMenu
+          isOpen={isMenuOpen}
+          handleOpen={() => setIsMenuOpen((isOpen) => !isOpen)}
+        />
       </div>
       <nav className={styles.nav}>
         <ul className={styles.navList}>

@@ -37,3 +37,17 @@
 .intro__btnTitle {
   font-size: 17px;
 }
+
+// MEDIA //
+
+@media screen and (max-width: 1100px) {
+  .intro__text {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .intro__text {
+    width: 95%;
+  }
+}
